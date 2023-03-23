@@ -15,6 +15,7 @@
 	<description>Spring Cloud API Gateway</description>
 	<properties>
 		<java.version>17</java.version>
+		<start-class>com.shubham.SpringMongoDbCrudApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -48,6 +49,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.shubham.SpringMongoDbCrudApplication</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 		<finalName>spring-mongo-db-app</finalName>
